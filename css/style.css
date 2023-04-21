@@ -26,18 +26,18 @@
 
 body {
     background-color: var(--Cream);
+    max-width: 1440px;
     width: 100%;
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
 }
 
 .card {
     background-color: var(--White);
-    width: 700px;
+    width: 800px;
     height: 520px;
     overflow: hidden;
     border-radius: 10px;
