@@ -1,0 +1,200 @@
+:root {
+
+    /*Color primary*/
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Darkcyanhover: hsl(158, 36%, 26%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /*Color neutral*/
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Typography*/
+    --Fontsize: 14px;
+
+    /*Font*/
+    --fraunces: 'Fraunces', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.card {
+    background-color: var(--White);
+    width: 45%;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 30px;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 90%;
+        height: 90%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.card .img {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+}
+
+@media (max-width: 375px) {
+    .card .img {
+        background-image: url("../images/image-product-mobile.jpg");
+        width: 100%;
+        height: 50%;
+    }
+}
+
+.card .info {
+    width: 70%;
+    padding: 10px;
+}
+
+@media (max-width: 375px) {
+    .card .info {
+        width: 100%;
+        height: 80%;
+        padding: 0 20px;
+    }
+}
+
+.card .info .perfu {
+    text-transform: uppercase;
+    font-size: var(--Fontsize);
+    font-family: var(--montserrat);
+    letter-spacing: 5px;
+    color: var(--Darkgrayishblue);
+    margin: 30px 0 15px 0;
+}
+
+@media (max-width: 375px) {
+    .card .info .perfu {
+        margin: 20px 0 10px 0;
+    }
+}
+
+.card .info .title {
+    width: 70%;
+    font-family: var(--fraunces);
+    margin-bottom: 30px;
+    color: var(--Verydarkblue);
+}
+
+@media (max-width: 375px) {
+    .card .info .title {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .card .info .title {
+        margin-bottom: 10px;
+    }
+}
+
+.card .info .body {
+    font-size: var(--Fontsize);
+    font-family: var(--montserrat);
+    color: var(--Darkgrayishblue);
+    line-height: 1.8;
+    letter-spacing: .6px;
+    width: 80%;
+}
+
+@media (max-width: 375px) {
+    .card .info .body {
+        width: 100%;
+        line-height: 1.5;
+    }
+}
+
+.card .info .body span {
+    text-transform: uppercase;
+}
+
+.card .info .price {
+    font-size: 40px;
+    color: var(--Darkcyan);
+    font-family: var(--fraunces);
+    font-weight: 700;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 375px) {
+    .card .info .price{
+        margin-top: 15px;
+    }
+}
+
+.card .info .price span {
+    font-size: var(--Fontsize);
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+}
+
+.card .btn {
+    background-color: var(--Darkcyan);
+    font-size: var(--Fontsize);
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 35px;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 375px) {
+    .card .btn {
+        margin-top: 15px;
+        width: 100%;
+        height: 45px;
+    }
+}
+
+.card .btn:hover {
+    background-color: var(--Darkcyanhover);
+}
+
+.card .btn p {
+    color: var(--White);
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
