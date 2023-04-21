@@ -37,8 +37,8 @@ body {
 
 .card {
     background-color: var(--White);
-    width: 45%;
-    height: 530px;
+    width: 700px;
+    height: 520px;
     overflow: hidden;
     border-radius: 10px;
 
@@ -48,10 +48,10 @@ body {
     gap: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card {
         width: 90%;
-        height: 90%;
+        height: 600px;
 
         display: flex;
         flex-direction: column;
@@ -66,7 +66,7 @@ body {
     height: 100%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .img {
         background-image: url("../images/image-product-mobile.jpg");
         width: 100%;
@@ -79,7 +79,7 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .info {
         width: 100%;
         height: 80%;
@@ -96,7 +96,7 @@ body {
     margin: 30px 0 15px 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .info .perfu {
         margin: 20px 0 10px 0;
     }
@@ -109,16 +109,10 @@ body {
     color: var(--Verydarkblue);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .info .title {
         width: 100%;
         margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 1210px) {
-    .card .info .title {
-        margin-bottom: 10px;
     }
 }
 
@@ -131,7 +125,7 @@ body {
     width: 80%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .info .body {
         width: 100%;
         line-height: 1.5;
@@ -154,7 +148,7 @@ body {
     gap: 15px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .info .price{
         margin-top: 15px;
     }
@@ -181,7 +175,7 @@ body {
     gap: 15px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 448px) {
     .card .btn {
         margin-top: 15px;
         width: 100%;
